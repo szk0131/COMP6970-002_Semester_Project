@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Calibri", sans-serif;
+    background-color:rgba(228, 208, 142, 0.25);
+}
+
+/* Header-related styles */
+header {
+    border-bottom: 1px solid gray;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* Body (main)-related styles */
+main {
+    background-color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.floor-plan {
+    margin: 10px 0;
+}
+
+.floor-plan div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+table th {
+    text-align: right;
+}
+
+img {
+    margin: 10px 0;
+}
+
+.review {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.rating {
+    text-align: right;
+}
+
+#no-reviews-available-text {
+    margin: 10px 0;
+}
+
+/* Footer-related styles */
+footer {
+    border-top: 1px solid gray;
+    padding: 20px 10px;
+    background-color: transparent;
+}
+
+/* Media query for tablets */
+@media (min-width: 540px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 20%;
+    }
+
+    .floor-plan div {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

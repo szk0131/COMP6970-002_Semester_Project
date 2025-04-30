@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Calibri", sans-serif;
+    background-color: rgba(228, 208, 142, 0.25);
+}
+
+/* Header-related styles */
+header {
+    border-bottom: 1px solid gray;
+    padding: 20px 10px;
+    background-color: transparent;
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* Body (main)-related options */
+main {
+    background-color: white;
+}
+
+#filtering-options {
+    padding: 10px;
+}
+
+.filter-option {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+select {
+    width: 125px;
+}
+
+#filtering-options-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color:rgb(228, 208, 142);
+    border: none;
+    font-size: 24px;
+}
+
+#apply-filters-button {
+    margin-bottom: 5px;
+}
+
+#number-of-apartment-complexes-line {
+    margin-left: 10px;
+}
+
+.apartment-summary {
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+
+.apartment-summary.hidden {
+    display: none;
+}
+
+.apartment-location {
+    display: flex;
+    flex-direction: column;
+}
+
+.apartment-summary-bottom-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+/* Footer-related styles */ 
+footer {
+    border-top: 1px solid gray;
+    padding: 20px 10px;
+    background-color: transparent;
+}
+
+/* Media query for tablets*/
+@media (min-width: 540px) {
+    .filter-option {
+        padding: 0 10%;
+    }
+
+    #filtering-options-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    #filtering-options-buttons button {
+        margin: 0;
+        width: 45%;
+    }
+
+    .apartment-location {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .apartment-location p {
+        text-align: right;
+    }
+}
